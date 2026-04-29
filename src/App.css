@@ -39,6 +39,7 @@ footer {
 }
 
 nav {
+    z-index: 99;
     font: var(--font-inter);
 }
 
@@ -89,5 +90,6 @@ section> .hero p {
 }
 
 .shop-btn:hover{
-    color:rgba(255, 255, 255, 0.568);
+    /* color:rgba(255, 255, 255, 0.568); */
+    color:var(--color-accent);
 }

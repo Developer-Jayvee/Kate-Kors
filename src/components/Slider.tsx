@@ -25,7 +25,7 @@ const DualRangeSlider = ({ minVal , maxVal} : DualRangeSliderInterface) => {
   const maxPercent = ((maxValue - min) / (max - min)) * 100;
 
   return (
-    <div className="w-full max-w-md mx-auto p-4">
+    <div className="w-full max-w-md mx-auto  ">
       <div className="relative h-10">
         {/* Full Track */}
         <div className="absolute top-1/2 w-full h-[2px] bg-gray-400 -translate-y-1/2"></div>
@@ -91,7 +91,7 @@ const DualRangeSlider = ({ minVal , maxVal} : DualRangeSliderInterface) => {
       </div>
 
       {/* Values */}
-      <div className="flex justify-between mt-4 text-sm text-gray-700">
+      <div className="flex justify-between mt-1 text-sm text-gray-700">
         <p className="font-inter"> Range :  {'\u20B1'} {minValue} - {'\u20B1'} {maxValue.toLocaleString()} </p>
       </div>
     </div>
