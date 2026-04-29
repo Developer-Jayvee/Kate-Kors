@@ -7,7 +7,7 @@ interface PageInterface {
 }
 export default function Page( { children} : PageInterface){
 
-    return <div className="select-none">
+    return <div className="select-none  mt-19">
         <Nav/>
             {children}
         <Footer/>
