@@ -6,7 +6,7 @@ interface SectionInterface {
 }
 export default function Section( { children , sectionID}: SectionInterface){
     return <>
-        <section id={sectionID}>
+        <section id={sectionID} className="scroll-mt-19">
             {children}
         </section>
     </>

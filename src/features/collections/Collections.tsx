@@ -7,7 +7,7 @@ import CollectionCard from "./CollectionCard";
 
 export default function Collections() {
   return (
-    <div className="w-full min-h-screen  grid grid-cols-1 grid-rows-[auto_1fr] gap-y-5  md:gap-y-7 my-10">
+    <div className="w-full min-h-screen  grid grid-cols-1 grid-rows-[auto_1fr] gap-y-5  md:gap-y-7 my-10 ">
       <div className=" grid   md:grid-cols-3  gap-x-3 md:justify-items-center items-center md:gap-y-0 gap-y-10 ">
         <Promise
           icon="handshake"

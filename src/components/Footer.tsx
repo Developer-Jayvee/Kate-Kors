@@ -9,12 +9,12 @@ export default function Footer() {
         { name: 'Collections', link: "#collections" },
         { name: 'Contact', link: "#contact" },
     ]
-    return <footer className=" grid grid-cols-1 grid-rows-[1fr_auto] p-5">
+    return <footer className=" grid grid-cols-1 grid-rows-[1fr_auto] p-5 font-inter">
         <div className="grid grid-cols-1 md:grid-cols-3  gap-y-6 md:gap-y-0 mb-5   items-center">
             <div className="flex flex-col items-center md:items-start">
-                <p className="font-inter-bold text-[24px]">Kate Kors</p>
+                <p className="font-inter font-bold text-[24px]">Kate Kors</p>
                 <div>
-                    <a href="https://www.facebook.com/kate.kors.2024" target="_blank" className=" rounded-full bg-eclipse w-auto p-1.5 flex items-center justify-center mt-2">
+                    <a href="https://www.facebook.com/kate.kors.2024" target="_blank" className=" rounded-full  w-auto p-1.5 flex items-center justify-center mt-2">
                         <FaFacebookF />
                     </a>
                 </div>
