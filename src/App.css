@@ -12,6 +12,7 @@
     --font-libre-bodoni-700: 700 calc(48 / 16 * 1rem)/1.5 var(--font-libre);
     --color-primary: #B8962E;
     --color-secondary: #2C2C2C;
+    --color-hoverSecondary: #2c2c2cdb;
     --color-neutral: #FFFFFF;
     --color-accent: #E67E22;
     --color-eclipse: rgba(240, 240, 240, 0.19);
@@ -32,6 +33,7 @@ nav,
 footer {
     background-color: var(--color-secondary);
     color: var(--color-neutral);
+    transition: height 400ms ease-in-out;
 }
 
 nav {
