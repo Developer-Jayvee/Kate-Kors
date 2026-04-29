@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="flex flex-col items-center md:items-start">
                 <p className="font-inter font-bold text-[24px]">Kate Kors</p>
                 <div>
-                    <a href="https://www.facebook.com/kate.kors.2024" target="_blank" className=" rounded-full  w-auto p-1.5 flex items-center justify-center mt-2">
+                    <a href="https://www.facebook.com/kate.kors.2024" target="_blank" className=" rounded-full  w-auto p-1.5 flex items-center justify-center mt-2 hover:text-accent">
                         <FaFacebookF />
                     </a>
                 </div>
@@ -36,7 +36,7 @@ export default function Footer() {
                 <ul className="text-[14px]">
                     {
                         links.map((val: any, index: number) => (
-                            <li key={index} className="inline mx-2">
+                            <li key={index} className="inline mx-4 hover:text-accent">
                                 <a href={val.link}>{val.name}</a>
                             </li>
                         ))

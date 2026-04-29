@@ -1,5 +1,5 @@
 import Footer from "../../components/Footer";
-import Nav from "../../components/Nav";
+import Nav, { type LinkTypes } from "../../components/Nav";
 import DualRangeSlider from "../../components/Slider";
 import Categories from "./Categories";
 import ColorFilter from "./ColorFilter";
@@ -9,21 +9,46 @@ import Perfume from "/images/shop/perfume.jpg";
 export default function Shop() {
     const categories = ['Handbag', 'Backpack', 'Watches', 'Perfume', 'Others'];
     const colors = ['black','blue','red']
+    const links: LinkTypes = [
+        { name: 'Home', link: "/#home" },
+        { name: 'Shop', link: "/shop" },
+        { name: 'Collections', link: "/#collections" },
+        { name: 'Contact', link: "/#contact" },
+    ]
     return <div className="min-h-full h-full flex flex-col">
-        <Nav />
-        <main className="flex-1 mt-19.5  grid grid-cols-[300px_1fr] h-full min-h-0  gap-x-10  px-20 py-10 bg-shopBg">
-            <div className="flex flex-col gap-7 p-4  bg-white h-full w-full border border-borderColor">
-                <Categories categories={categories} />
-                <PriceSlider/>
-                <ColorFilter colors={colors}/>
-            </div>
-            <div className=" overflow-auto min-h-0 h-full">
-                <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4">
-                    <ProductCard imgStr={Perfume} title="Perfume" price={5000} />
-                    <ProductCard imgStr={Perfume} title="Perfume" price={5000} />
-                </div>
-            </div>
-        </main>
-        <Footer />
+        <Nav links={links} />
+       <main className="mt-19.5 flex-1 grid grid-cols-[300px_1fr] max-lg:grid-cols-1 max-lg:grid-rows-[250px_1fr] max-lg:gap-y-10 h-full min-h-0 gap-x-10 px-4 md:px-8 lg:px-20 py-10 bg-shopBg">
+    
+    {/* Sidebar - remove max-w-100 constraint */}
+  <div className="flex flex-col lg:gap-7 p-4 max-w-full lg:max-w-[300px] w-full lg:w-[300px] bg-white h-full border border-borderColor shadow-2xl">
+    
+    {/* Categories - scroll only on small screens */}
+    <div className="overflow-x-auto overflow-y-hidden lg:overflow-visible">
+        <div className="min-w-max lg:min-w-0">
+            <Categories categories={categories} />
+        </div>
+    </div>
+    
+    <PriceSlider/>
+    
+    {/* ColorFilter - scroll only on small screens */}
+    <div className="overflow-x-auto  overflow-y-hidden lg:overflow-visible">
+        <div className="flex gap-2 min-w-max lg:min-w-0 lg:flex-wrap">
+            <ColorFilter colors={colors}/>
+        </div>
+    </div>
+    
+</div>
+    
+    {/* Products grid - unchanged */}
+    <div className="overflow-auto min-h-0 h-full">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4">
+            <ProductCard imgStr={Perfume} title="Perfume" price={5000} />
+            <ProductCard imgStr={Perfume} title="Perfume" price={5000} />
+            {/* More products */}
+        </div>
+    </div>
+</main>
+        {/* <Footer /> */}
     </div>
 }

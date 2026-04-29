@@ -5,9 +5,9 @@ interface CategoriesInterface {
 export default function Categories({
     categories
 } : CategoriesInterface){
-    return  <div>
+    return  <div className="">
                 <p className="font-inter font-bold leading-9">CATEGORIES</p>
-                <ul>
+                <ul className="flex lg:flex-col max-lg:gap-5 max-lg:ml-5">
                     {
                         categories.map( (val:string) => (
                             <li className="mb-2">
