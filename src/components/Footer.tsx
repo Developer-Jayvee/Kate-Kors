@@ -1,7 +1,6 @@
-import { Copyright, Map, Phone } from "iconoir-react";
+import { Copyright, } from "iconoir-react";
 import type { LinkTypes } from "./Nav";
-import { FaFacebookF, FaPhoneAlt } from "react-icons/fa";
-import { IoMapSharp } from "react-icons/io5";
+import { FaFacebookF } from "react-icons/fa";
 export default function Footer() {
     const links: LinkTypes = [
         { name: 'Home', link: "#home" },
