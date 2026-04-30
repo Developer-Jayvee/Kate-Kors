@@ -5,10 +5,9 @@ interface CollectionCardInterface {
     title: string;
     collectionImg: string;
     customClass?: string;
-    iconSize?: number;
 }
 export default function CollectionCard({
-    title, collectionImg, customClass = "", iconSize
+    title, collectionImg, customClass = ""
 }: CollectionCardInterface) {
     return <div className={`parent-div shadow-2xl rounded-lg transition-all delay-100  relative  p-4 ${customClass}`}
         onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.4)'}
