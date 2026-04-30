@@ -33,10 +33,10 @@ export default function Footer() {
                 </div>
             </div> */}
             <div className="  flex  justify-center md:justify-end">
-                <ul className="text-[14px]">
+                <ul className="text-[14px] flex max-md:justify-evenly max-md:w-full">
                     {
                         links.map((val: any, index: number) => (
-                            <li key={index} className="inline mx-4 hover:text-accent">
+                            <li key={index} className="md:inline md:mx-4 hover:text-accent">
                                 <a href={val.link}>{val.name}</a>
                             </li>
                         ))

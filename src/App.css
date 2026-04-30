@@ -59,7 +59,7 @@ section {
 }
 
 section > .hero {
-    background-image: url("./../public/images/hero/image-1.jpg");
+    /* background-image: url("./../public/images/hero/image-1.jpg"); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
