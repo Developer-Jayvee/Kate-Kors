@@ -5,21 +5,22 @@ import { IoMapSharp } from "react-icons/io5";
 export default function Footer() {
     const links: LinkTypes = [
         { name: 'Home', link: "#home" },
-        { name: 'Shop', link: "/shop" },
+        { name: 'Services', link: "#services" },
         { name: 'Collections', link: "#collections" },
-        { name: 'Contact', link: "#contact" },
+        { name: 'About Us', link: "#about" },
     ]
     return <footer className=" grid grid-cols-1 grid-rows-[1fr_auto] p-5 font-inter">
-        <div className="grid grid-cols-1 md:grid-cols-3  gap-y-6 md:gap-y-0 mb-5   items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-y-6 md:gap-y-0 mb-5   items-center">
             <div className="flex flex-col items-center md:items-start">
                 <p className="font-inter font-bold text-[24px]">Kate Kors</p>
+                <p className="text-[12px] font-inter mt-1">Tuktukan, Guiguinto, Bulacan |  0995-0716-045</p>
                 <div>
-                    <a href="https://www.facebook.com/kate.kors.2024" target="_blank" className=" rounded-full  w-auto p-1.5 flex items-center justify-center mt-2 hover:text-accent">
+                    <a href="https://www.facebook.com/kate.kors.2024" target="_blank" className=" rounded-full  w-auto p-1.5 flex items-center justify-center mt-2 bg-gray-700 ">
                         <FaFacebookF />
                     </a>
                 </div>
             </div>
-            <div className="  flex justify-center  ">
+            {/* <div className="  flex justify-center  ">
                 <div className="md:block  flex flex-col items-center md:items-start ">
                     <p className="text-[16px] mb-3">CONTACT US</p>
                     <div className="flex items-center gap-2 text-[14px] mb-2">
@@ -31,7 +32,7 @@ export default function Footer() {
                         <p>Tuktukan, Guiguinto, Bulacan</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="  flex  justify-center md:justify-end">
                 <ul className="text-[14px]">
                     {

@@ -1,69 +1,40 @@
-import NewArrivalImg from "/images/shop/new-arrival.jpg";
-import WatchImg from "/images/shop/watch-main.jpg";
-import PerfumeImg from "/images/shop/perfume.jpg";
-import HandBagImg from "/images/shop/hand-bag-main.jpg";
 import Promise from "./Promise";
-import CollectionCard from "./CollectionCard";
 import { Fade } from "react-awesome-reveal";
+
 
 export default function Collections() {
   return (
-    <div className="w-full min-h-screen  grid grid-cols-1 grid-rows-[auto_1fr] gap-y-5  md:gap-y-7 my-10 ">
-      <div className=" grid   md:grid-cols-3  gap-x-3 md:justify-items-center items-center md:gap-y-0 gap-y-10 ">
-        <Fade triggerOnce>
-          <Promise
-            icon="handshake"
-            size={70}
-            title="Secure Payment"
-            description="We ensure secure payment"
-          />
-          <Promise
-            icon="handcoins"
-            size={70}
-            title="100% Money Back"
-            description="30 days return policy"
-          />
-          <Promise
-            icon="bschat"
-            size={70}
-            title="Online Support"
-            description="24/7 dedicated support"
-          />
+    <div className="w-full grid grid-cols-1 grid-rows-[auto_1fr] gap-y-5  lg:gap-y-20 my-10 p-4 ">
+      <div className="flex flex-col items-center gap-20 ">
+        <div className="text-center">
+          <Fade fraction={0.2} >
+            <h2 className="mb-3">What we offer</h2>
+            <h4 className="text-center text-inter">Discover our exclusive collections and elevate your style with our curated selection of luxury fashion.</h4>
+          </Fade>
+        </div>
+        <div className=" w-full grid   lg:grid-cols-3  gap-x-10 lg:justify-items-center items-center lg:gap-y-0 gap-y-10 ">
+          <Fade fraction={0.2} cascade>
+            <Promise
+              icon="handshake"
+              size={70}
+              title="Secure Payment"
+              description="Your transactions are protected with industry-standard encryption"
+            />
+            <Promise
+              icon="handcoins"
+              size={70}
+              title="100% Money Back"
+              description="Your satisfaction is our promise. Full refunds, simply and swiftly."
+            />
+            <Promise
+              icon="bschat"
+              size={70}
+              title="Online Support"
+              description="Need help choosing the perfect bag or scent? Reach out anytime"
+            />
 
-        </Fade>
-      </div>
-      <div className="grid md:grid-cols-3 grid-cols-1 md:grid-rows-2 gap-x-8 gap-y-8 m-7">
-        <Fade triggerOnce className="h-full md:row-span-2  " delay={700} >
-
-        <CollectionCard
-          title="New Arrivals"
-          customClass="md:row-span-2 h-full  flex flex-col items-end "
-          collectionImg={NewArrivalImg}
-        />
-        </Fade>
-        <Fade triggerOnce className="h-full md:col-start-2 " delay={800} >
-          <CollectionCard
-            title="Watch"
-            customClass="h-full md:col-start-2 flex flex-col items-end md:justify-end md:items-start"
-            collectionImg={WatchImg}
-          />
-
-        </Fade>
-        <Fade triggerOnce className="h-full md:col-start-3" delay={900}>
-          <CollectionCard
-            title="Fragrance"
-            customClass="h-full md:col-start-3 flex flex-col items-end md:justify-end md:items-start "
-            collectionImg={PerfumeImg}
-          />
-        </Fade>
-         <Fade triggerOnce className="h-full  md:col-start-2 md:col-span-2" delay={1000}>
-          <CollectionCard
-            title="Handbag"
-            customClass="h-full  md:col-start-2 md:col-span-2 md:row-start-1 row-start-2 flex flex-col items-end"
-            collectionImg={HandBagImg}
-          />
-
-         </Fade>
+          </Fade>
+        </div>
       </div>
     </div>
   );

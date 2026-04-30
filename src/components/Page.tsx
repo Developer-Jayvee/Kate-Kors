@@ -8,11 +8,11 @@ interface PageInterface {
 export default function Page( { children} : PageInterface){
     const links: LinkTypes = [
         { name: 'Home', link: "#home" },
-        { name: 'Shop', link: "/shop" },
+        { name: 'Services', link: "#services" },
         { name: 'Collections', link: "#collections" },
-        { name: 'Contact', link: "#contact" },
+        { name: 'About Us', link: "#about" },
     ]
-    return <div className="select-none  mt-19">
+    return <div className="select-none ">
         <Nav links={links}/>
             {children}
         <section id="contact">
