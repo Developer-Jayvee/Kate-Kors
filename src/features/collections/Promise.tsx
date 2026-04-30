@@ -18,7 +18,7 @@ export default function Promise({
         </div>
         <div className=" text-center">
             <h2 className="header mb-3">{title}</h2>
-            <p className="secondary-header">{description}</p>
+            <h4 className="secondary-header">{description}</h4>
         </div>
     </div>
 }

@@ -90,8 +90,13 @@ h4 {
     color:var(--color-secondary);
     font-size: clamp(1.5vw, calc(16 / 16 * 1rem), 10vw);
 }
-section> .hero p {
+.card-title{
     font-family: var(--font-libre);
+    font-size: clamp(3vw, calc(30 / 16 * 1rem), 10vw);
+}
+section> .hero p {
+    font-family: var(--font-inter);
+    font-weight: 300;
     font-size: clamp(1.5vw, calc(20 / 16 * 1rem), 10vw);
 }
 

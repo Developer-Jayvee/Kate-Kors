@@ -1,4 +1,4 @@
-import IconComponent from "../../components/IconComponent";
+// import IconComponent from "../../components/IconComponent";
 
 
 interface CollectionCardInterface {
@@ -10,7 +10,7 @@ interface CollectionCardInterface {
 export default function CollectionCard({
     title, collectionImg, customClass = "", iconSize
 }: CollectionCardInterface) {
-    return <div className={`parent-div shadow-2xl rounded-lg transition-all delay-100  relative leading-6 p-4 ${customClass}`}
+    return <div className={`parent-div shadow-2xl rounded-lg transition-all delay-100  relative  p-4 ${customClass}`}
         onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.4)'}
         onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.2)'}
     >
@@ -23,10 +23,10 @@ export default function CollectionCard({
             />
              <div className="absolute inset-0 bg-black/30"></div>
         </div>
-        <h3 className="text-white mb-2">{title}</h3>
-        <button className=" transition-transform  shop-btn cursor-pointer flex gap-1 items-center justify-end text-white font-inter mt-2">
+        <p className="card-title text-white mb-2 leading-11">{title}</p>
+        {/* <button className=" transition-transform  shop-btn cursor-pointer flex gap-1 items-center justify-end text-white font-inter mt-2">
             <span className="font-bold">Shop now</span>
             <IconComponent name="navArrowRight" size={iconSize} />
-        </button>
+        </button> */}
     </div>
 }

@@ -11,21 +11,21 @@ export default function FeaturedCollections() {
       <Fade fraction={0.2} className="h-full lg:row-span-2  ">
         <CollectionCard
           title="Carry confidence wherever you go"
-          customClass="lg:row-span-2 h-full  flex flex-col items-start gap-2 "
+          customClass="lg:row-span-2 h-full  flex flex-col text-right gap-2 "
           collectionImg={NewArrivalImg}
         />
       </Fade>
       <Fade fraction={0.2} className="h-full lg:col-start-2 ">
         <CollectionCard
           title="Timeless style, every second."
-          customClass="h-full lg:col-start-2 flex flex-col items-start gap-2"
+          customClass="h-full lg:col-start-2 flex flex-col text-right items-start gap-2"
           collectionImg={WatchImg}
         />
       </Fade>
       <Fade fraction={0.2} className="h-full lg:col-start-3" >
         <CollectionCard
           title="Leave a scent they'll remember."
-          customClass="h-full lg:col-start-3 flex flex-col items-start gap-2 "
+          customClass="h-full lg:col-start-3 text-right gap-2 "
           collectionImg={PerfumeImg}
         />
       </Fade>
@@ -36,7 +36,7 @@ export default function FeaturedCollections() {
       >
         <CollectionCard
           title="Small details, big statement"
-          customClass="h-full  lg:col-start-2 lg:col-span-2 lg:row-start-1 row-start-2  flex flex-col items-start gap-2"
+          customClass="h-full  lg:col-start-2 lg:col-span-2 lg:row-start-1 row-start-2   gap-2 text-right"
           collectionImg={Accessories}
         />
       </Fade>
