@@ -1,4 +1,4 @@
-import { Cart, Heart, Menu } from "iconoir-react";
+import { Menu } from "iconoir-react";
 import Logo from "/images/logo.png";
 import { useEffect, useState } from "react";
 import { HashLink } from 'react-router-hash-link';

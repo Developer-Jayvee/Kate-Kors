@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 
-interface DualRangeSliderInterface {
-  minVal ?: number;
-  maxVal ?: number;
-}
-const DualRangeSlider = ({ minVal , maxVal} : DualRangeSliderInterface) => {
+
+const DualRangeSlider = () => {
   const min =  0;
   const max = 10000;
 
