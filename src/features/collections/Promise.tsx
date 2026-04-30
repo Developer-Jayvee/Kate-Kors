@@ -12,12 +12,12 @@ interface PromiseInterface {
 export default function Promise({
     icon, size = 11, title, description , customClass = ""
 }: PromiseInterface) {
-    return <div className={`md:grid grid-cols-[auto_1fr] flex gap-2 justify-center   items-center justify-items-start gap-x-2 ${customClass}`}>
-        <div className="  justify-items-end">
+    return <div className={`flex flex-col items-center px-5 py-6 shadow-md rounded-lg ${customClass}`}>
+        <div className="mb-4">
             <IconComponent size={size} name={icon}/>
         </div>
-        <div className=" ">
-            <h2 className="header">{title}</h2>
+        <div className=" text-center">
+            <h2 className="header mb-3">{title}</h2>
             <p className="secondary-header">{description}</p>
         </div>
     </div>

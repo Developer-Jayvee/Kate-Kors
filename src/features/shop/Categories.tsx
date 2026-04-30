@@ -5,7 +5,7 @@ interface CategoriesInterface {
 export default function Categories({
     categories
 } : CategoriesInterface){
-    return  <div className="">
+    return  <div className="select-none">
                 <p className="font-inter font-bold leading-9">CATEGORIES</p>
                 <ul className="flex lg:flex-col max-lg:gap-5 max-lg:ml-5">
                     {
