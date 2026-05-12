@@ -33,7 +33,7 @@ export default function FeaturedProducts() {
 
             <div className="mt-12 w-full overflow-x-auto no-scrollbar px-5">
                 <div className="flex md:grid md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] md:w-full flex-nowrap gap-4 w-max">
-                    {Object.values(productImages).map((img, index) => (
+                    {Object.values(productImages).map((img : any, index : number) => (
                         <ProductCard
                             key={index}
                             imgStr={img.image}

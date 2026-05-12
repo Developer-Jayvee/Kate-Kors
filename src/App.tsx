@@ -1,9 +1,5 @@
-import { Fade } from "react-awesome-reveal";
 import Page from "./components/Page";
 import Section from "./components/Section";
-import About from "./features/about/About";
-import Collections from "./features/collections/Collections";
-import FeaturedCollections from "./features/collections/FeaturedCollections";
 import Home from "./features/home/Home";
 import ServicesOffer from "./features/collections/ServicesOffer";
 import FeaturedProducts from "./features/products/featuredProducts";

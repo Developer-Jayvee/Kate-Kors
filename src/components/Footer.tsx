@@ -1,55 +1,34 @@
-import { Copyright, } from "iconoir-react";
-import type { LinkTypes } from "./Nav";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
+// import type { LinkTypes } from "./Nav";
+import { LuMapPin } from "react-icons/lu";
+import { CiPhone } from "react-icons/ci";
 export default function Footer() {
-    const links: LinkTypes = [
-         { name: 'Home', link: "#home" },
-        { name: 'Services', link: "#services" },
-        { name: 'Collections', link: "#collections" },
-        // { name: 'About Us', link: "#about" },
-    ]
-    return <footer className=" grid grid-cols-1 grid-rows-[1fr_auto] p-5 font-inter">
-        <div className="grid grid-cols-1 md:grid-cols-2  gap-y-6 md:gap-y-0 mb-5   items-center">
-            <div className="flex flex-col items-center md:items-start">
-                <p className="font-inter font-bold text-[24px]">Kate Kors</p>
-                <p className="text-[12px] font-inter mt-1">Tuktukan, Guiguinto, Bulacan |  0995-0716-045</p>
-                <div>
-                    <a href="https://www.facebook.com/kate.kors.2024" target="_blank" className=" rounded-full  w-auto p-1.5 flex items-center justify-center mt-2 bg-gray-700 ">
-                        <FaFacebookF />
-                    </a>
-                </div>
-            </div>
-            {/* <div className="  flex justify-center  ">
-                <div className="md:block  flex flex-col items-center md:items-start ">
-                    <p className="text-[16px] mb-3">CONTACT US</p>
-                    <div className="flex items-center gap-2 text-[14px] mb-2">
-                        <FaPhoneAlt />
-                        <p>0995-0716-045</p>
-                    </div>
-                    <div className="flex items-center gap-2 text-[14px] mb-2">
-                        <IoMapSharp />
-                        <p>Tuktukan, Guiguinto, Bulacan</p>
-                    </div>
-                </div>
-            </div> */}
-            <div className="  flex  justify-center md:justify-end">
-                <ul className="text-[14px] flex max-md:justify-evenly max-md:w-full">
-                    {
-                        links.map((val: any, index: number) => (
-                            <li key={index} className="md:inline md:mx-4 hover:text-accent">
-                                <a href={val.link}>{val.name}</a>
-                            </li>
-                        ))
-                    }
-                </ul>
-            </div>
-        </div>
-        <div>
-            <hr className="my-2 opacity-50" />
-            <div className="flex gap-2 float-right text-[12px]">
-                <Copyright />
-                <p>2026. All Rights reserved.</p>
-            </div>
-        </div>
+    // const links: LinkTypes = [
+    //      { name: 'Home', link: "#home" },
+    //     { name: 'Services', link: "#services" },
+    //     { name: 'Collections', link: "#collections" },
+    // ]
+    return <footer className=" flex justify-center items-center gap-10 p-5 font-inter">
+      <div>
+        <a href="#home" className="border border-white px-6 py-2 hover:scale-105 transition-transform font-bold">
+            KATE KORS
+        </a>
+      </div>
+      <div className=" border border-white h-10 bg-white"></div>
+      <div className="flex gap-2 items-center">
+        <LuMapPin size={20}/>
+        <p>Tuktukan, Guiguinto, Bulacan </p>
+      </div>
+        <div className=" border border-white h-10 bg-white"></div>
+      <div className="flex gap-2 items-center">
+        <CiPhone size={20}/>
+        <p>0995-0716-045</p>
+      </div>
+        <div className=" border border-white h-10 bg-white"></div>
+      <div>
+        <a  href="https://www.facebook.com/kate.kors.2024" target="_blank">
+            <FaFacebook className="hover:scale-105 transition-transform" size={20}/>
+        </a>
+      </div>
     </footer>
 }

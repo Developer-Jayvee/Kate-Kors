@@ -1,5 +1,4 @@
 import { Fade } from "react-awesome-reveal";
-import { HashLink } from "react-router-hash-link";
 import HeroImage from "/images/hero/image-1.jpg"
 
 export default function Home(){

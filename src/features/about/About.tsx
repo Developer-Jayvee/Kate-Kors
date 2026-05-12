@@ -1,4 +1,3 @@
-import { HashLink } from "react-router-hash-link";
 import PopularityImg from "/images/popularity.png";
 
 export default function About() {
