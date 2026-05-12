@@ -8,7 +8,7 @@ import ProductLinks from "./productLinks";
 
 export default function FeaturedProducts() {
     const [productImages, setProductImages] = useState<ProductInterface[]>([]);
-    const listImages = useRef([])
+    const listImages = useRef<ProductInterface[]>([])
     useEffect(() => {
         const abort = new AbortController;
         const setImages = () => {
@@ -21,7 +21,7 @@ export default function FeaturedProducts() {
 
     const filterList = (type : string) => {
         
-        setProductImages((prev) =>
+        setProductImages(() =>
             listImages.current.filter((val: any) => {
                 if(type === "all") return val.name !== "";
                 if(type === "others") return ['Perfume','Wallet'].includes(val.category)
