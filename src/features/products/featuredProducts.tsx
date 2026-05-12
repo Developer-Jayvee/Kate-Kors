@@ -9,7 +9,7 @@ import ProductLinks from "./productLinks";
 export default function FeaturedProducts() {
     const [productImages, setProductImages] = useState<ProductInterface[]>([]);
     const listImages = useRef<ProductInterface[]>([])
-    const currentFiltered = useRef<string>("all");
+    const currentFiltered = useRef<string>("All");
     useEffect(() => {
         const abort = new AbortController;
         const setImages = () => {
