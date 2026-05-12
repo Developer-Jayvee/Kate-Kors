@@ -9,7 +9,7 @@ export default function Home(){
         <Fade triggerOnce cascade delay={300} >
             <h1 className="font-bold">LUXURY</h1>
             <p className="leading-6 mb-8">Experience the finest craftsmanship and materials.</p>
-           <HashLink to="#collections" className="text-white font-inter cursor-pointer hover:bg-accent bg-primary py-3 px-6 text-center text-inter-700 mt-9">EXPLORE</HashLink>
+           <a target="_blank" href="https://www.facebook.com/kate.kors.2024" className="text-white font-inter cursor-pointer hover:bg-accent bg-primary py-2 px-5 text-center text-inter-700 mt-9 rounded-md">MESSAGE US</a>
         </Fade>
     </div>
-}
+} 

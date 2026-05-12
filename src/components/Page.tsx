@@ -10,7 +10,7 @@ export default function Page( { children} : PageInterface){
         { name: 'Home', link: "#home" },
         { name: 'Services', link: "#services" },
         { name: 'Collections', link: "#collections" },
-        { name: 'About Us', link: "#about" },
+        // { name: 'About Us', link: "#about" },
     ]
     return <div className="select-none ">
         <Nav links={links}/>

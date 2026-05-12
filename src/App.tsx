@@ -5,6 +5,8 @@ import About from "./features/about/About";
 import Collections from "./features/collections/Collections";
 import FeaturedCollections from "./features/collections/FeaturedCollections";
 import Home from "./features/home/Home";
+import ServicesOffer from "./features/collections/ServicesOffer";
+import FeaturedProducts from "./features/products/featuredProducts";
 
 export default function App() {
  
@@ -14,16 +16,22 @@ export default function App() {
           <Home />
         </Section>
       <Section sectionID="services">
-        <Collections />
+        {/* <Collections /> */}
+        <div className="my-15">
+          <ServicesOffer/>
+        </div>
       </Section>
       <Section sectionID="collections">
-        <FeaturedCollections />
+        <FeaturedProducts/>
       </Section>
-      <Section sectionID="about">
-        <Fade   cascade fraction={0.2}>
+      {/* <Section sectionID="collections">
+        <FeaturedCollections />
+      </Section> */}
+      {/* <Section sectionID="about">
+        <Fade   cascade fraction={0.2} triggerOnce>
           <About />
         </Fade>
-      </Section>
+      </Section> */}
     </Page>
   </>
 }

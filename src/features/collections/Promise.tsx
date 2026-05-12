@@ -12,7 +12,7 @@ interface PromiseInterface {
 export default function Promise({
     icon, size = 11, title, description , customClass = ""
 }: PromiseInterface) {
-    return <div className={`flex flex-col items-center px-5 py-6 shadow-md rounded-lg ${customClass}`}>
+    return <div className={`flex flex-col items-center px-5 py-6  rounded-lg ${customClass}`}>
         <div className="mb-4">
             <IconComponent size={size} name={icon}/>
         </div>

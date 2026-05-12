@@ -3,10 +3,10 @@ import type { LinkTypes } from "./Nav";
 import { FaFacebookF } from "react-icons/fa";
 export default function Footer() {
     const links: LinkTypes = [
-        { name: 'Home', link: "#home" },
+         { name: 'Home', link: "#home" },
         { name: 'Services', link: "#services" },
         { name: 'Collections', link: "#collections" },
-        { name: 'About Us', link: "#about" },
+        // { name: 'About Us', link: "#about" },
     ]
     return <footer className=" grid grid-cols-1 grid-rows-[1fr_auto] p-5 font-inter">
         <div className="grid grid-cols-1 md:grid-cols-2  gap-y-6 md:gap-y-0 mb-5   items-center">
