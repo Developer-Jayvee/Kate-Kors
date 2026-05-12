@@ -9,6 +9,7 @@ import ProductLinks from "./productLinks";
 export default function FeaturedProducts() {
     const [productImages, setProductImages] = useState<ProductInterface[]>([]);
     const listImages = useRef<ProductInterface[]>([])
+    const currentFiltered = useRef<string>("all");
     useEffect(() => {
         const abort = new AbortController;
         const setImages = () => {
@@ -20,11 +21,11 @@ export default function FeaturedProducts() {
     }, [])
 
     const filterList = (type : string) => {
-        
+        currentFiltered.current = type;
         setProductImages(() =>
             listImages.current.filter((val: any) => {
-                if(type === "all") return val.name !== "";
-                if(type === "others") return ['Perfume','Wallet'].includes(val.category)
+                if(type === "All") return val.name !== "";
+                if(type === "Others") return ['Perfume','Wallet'].includes(val.category)
                 return val.category === type;
             })
         );
@@ -37,7 +38,7 @@ export default function FeaturedProducts() {
                     <h6 className="max-md:text-center mb-10  block  mt-10 text-2xl  text-secondary font-inter">Discover our carefully selected collection of standout products, chosen for their quality, style, and everyday value to help you find your next favorite with ease.</h6>
                 </div>
                 <div className="">
-                    <ProductLinks onclick={(type : string) => filterList(type) } />
+                    <ProductLinks active={currentFiltered.current} onclick={(type : string) => filterList(type) } />
                 </div>
             </div>
 
