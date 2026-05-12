@@ -32,7 +32,7 @@ export default function Nav({ links }: NavInterface) {
             }
         }, []);
     }
-    return <nav className={` ${isLeavingHome ? 'colored' : 'blurred'} ${navHeight}  grid md:grid-cols-2 grid-cols-1 items-center p-3 fixed top-0 left-0 right-0   overflow-hidden`}>
+    return <nav className={` ${isLeavingHome ? 'colored' : 'blurred'} ${navHeight}  grid md:grid-cols-2 grid-cols-1 items-center p-3 fixed top-0 left-0 right-0   overflow-hidden `}>
 
         <div className="flex justify-between items-center grow ">
             <div className="grow max-md:flex max-md:gap-2 max-md:items-center">
@@ -66,6 +66,11 @@ export default function Nav({ links }: NavInterface) {
                     </li>
                 ))
             }
+            <li>
+                <div className=" max-md:flex items-center justify-center ">
+                    <a target="_blank" href="https://www.facebook.com/kate.kors.2024" className="text-white font-inter cursor-pointer hover:bg-accent bg-primary py-2 px-5 text-center text-inter-700 mt-9 ">MESSAGE US</a>
+                </div>
+            </li>
         </ul>
 
 
