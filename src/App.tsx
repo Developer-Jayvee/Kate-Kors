@@ -3,6 +3,7 @@ import Section from "./components/Section";
 import Home from "./features/home/Home";
 import ServicesOffer from "./features/collections/ServicesOffer";
 import FeaturedProducts from "./features/products/featuredProducts";
+import FeaturedCollections from "./features/collections/FeaturedCollections";
 
 export default function App() {
  
@@ -18,11 +19,11 @@ export default function App() {
         </div>
       </Section>
       <Section sectionID="collections">
+        <FeaturedCollections />
+      </Section>
+      <Section sectionID="collections">
         <FeaturedProducts/>
       </Section>
-      {/* <Section sectionID="collections">
-        <FeaturedCollections />
-      </Section> */}
       {/* <Section sectionID="about">
         <Fade   cascade fraction={0.2} triggerOnce>
           <About />

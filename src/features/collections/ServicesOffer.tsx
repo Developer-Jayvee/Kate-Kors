@@ -3,25 +3,27 @@ import { Fade } from "react-awesome-reveal";
 
 
 export default function ServicesOffer() {
-    return <div className=" w-full grid   lg:grid-cols-3  gap-x-10 lg:justify-items-center items-center lg:gap-y-0 gap-y-10 ">
+    return <div className=" w-full grid   lg:grid-cols-4  gap-x-10 lg:justify-items-center items-center lg:gap-y-0 gap-y-10 ">
         <Fade fraction={0.2} cascade triggerOnce>
             <Promise
-                icon="handshake"
-                size={70}
-                title="Secure Payment"
-                description="Your transactions are protected with industry-standard encryption"
+                icon="shippingFast"
+                title="Free Delivery"
+                description="Selected Area Only"
             />
             <Promise
-                icon="handcoins"
-                size={70}
+                icon="securePay"
+                title="Secure Payment"
+                description="Secure transactions guaranteed"
+            />
+            <Promise
+                icon="cashBack"
                 title="100% Money Back"
-                description="Your satisfaction is our promise. Full refunds, simply and swiftly."
+                description="Risk-free shopping"
             />
             <Promise
                 icon="bschat"
-                size={70}
-                title="Online Support"
-                description="Need help choosing the perfect bag or scent? Reach out anytime"
+                title="24/7 Support"
+                description="Fast online assistance"
             />
 
         </Fade>

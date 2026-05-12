@@ -45,8 +45,8 @@ export default function FeaturedProducts() {
                 </div>
             </div>
             <div className="mt-6">
-                <div className=" bg-white py-4 px-6  flex max-md:flex-col items-center gap-10 font-inter">
-                    <div className="border rounded-full p-4">
+                <div className=" bg-white py-4 px-6 text-secondary  flex max-md:flex-col items-center gap-10 font-inter">
+                    <div className="border border-secondary rounded-full p-4">
                         <IoBagHandleOutline size={30}/>
                     </div>
                     <div className="max-md:text-center">

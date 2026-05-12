@@ -16,7 +16,7 @@ export default function ProductCard({
         </div>
         <div className="px-2 mt-2">
             <p className="text-gray-500 text-sm mb-1">{category}</p>
-            <p className="font-bold text-lg mb-2">{title}</p>
+            <p className="font-bold text-lg mb-2 truncate">{title}</p>
             <p>{"\u20B1"} {price}</p>
         </div>
     </div>

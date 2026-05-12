@@ -20,9 +20,9 @@ export default function CollectionCard({
                 className="w-full h-full object-cover"
                 loading="eager"
             />
-             <div className="absolute inset-0 bg-black/10"></div>
+             <div className="absolute inset-0 bg-black/30"></div>
         </div>
-        {/* <p className="card-title text-white mb-2 md:leading-14 ">{title}</p> */}
+        <p className="card-title text-white mb-2 md:leading-14 ">{title}</p>
         {/* <button className=" transition-transform  shop-btn cursor-pointer flex gap-1 items-center justify-end text-white font-inter mt-2">
             <span className="font-bold">Shop now</span>
             <IconComponent name="navArrowRight" size={iconSize} />

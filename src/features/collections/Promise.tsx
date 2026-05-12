@@ -10,14 +10,16 @@ interface PromiseInterface {
     customClass ?: string;
 }
 export default function Promise({
-    icon, size = 11, title, description , customClass = ""
+    icon, size = 50, title, description , customClass = ""
 }: PromiseInterface) {
     return <div className={`flex flex-col items-center px-5 py-6  rounded-lg ${customClass}`}>
-        <div className="mb-4">
-            <IconComponent size={size} name={icon}/>
+        <div className="mb-1">
+            <div className="border border-secondary rounded-full p-4">
+                <IconComponent size={size} name={icon}/>
+            </div>
         </div>
         <div className=" text-center">
-            <h2 className="header mb-3">{title}</h2>
+            <h2 className="header mb-1">{title}</h2>
             <h4 className="secondary-header">{description}</h4>
         </div>
     </div>
