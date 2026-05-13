@@ -26,6 +26,6 @@ export const Products : ProductInterface[] = [
   { image : PRODUCT7, name : 'MARC JACOBS LARGE GRIND TOTE' , price : '8,700' , category : 'Bag' },
   { image : PRODUCT8, name : 'MARC JACOBS MINI GRIND TOTE' , price : '7,500' , category : 'Bag' },
   { image : PRODUCT9, name : 'KATE SPADE WALLET' , price : '3,200' , category : 'Wallet' },
-  { image : PRODUCT10, name : 'KATE SPADE WALLET' , price : '3,800' , category : 'Bag' },
+  { image : PRODUCT10, name : 'MK SM SOHO CONVERTIBLE CROSSBODY' , price : '3,800' , category : 'Bag' },
 ]
 

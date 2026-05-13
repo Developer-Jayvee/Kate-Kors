@@ -30,7 +30,7 @@ export default function FeaturedProducts() {
             })
         );
     }
-    return <Fade triggerOnce fraction={0.5} >
+    return <Fade triggerOnce cascade >
         <div className="flex flex-col  my-20 ">
             <div className="flex max-md:flex-col lg:justify-between  items-center px-5">
                 <div className=" lg:w-[40%]">
@@ -56,7 +56,7 @@ export default function FeaturedProducts() {
                 </div>
             </div>
             <div className="mt-6">
-                <div className=" bg-white py-4 px-6 text-secondary  flex max-md:flex-col items-center gap-10 font-inter">
+                <div className=" bg-white py-4 px-6 text-secondary  flex max-md:flex-col md:justify-center items-center gap-10 font-inter">
                     <div className="border border-secondary rounded-full p-4">
                         <IoBagHandleOutline size={30}/>
                     </div>

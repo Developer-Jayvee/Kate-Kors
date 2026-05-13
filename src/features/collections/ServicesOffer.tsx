@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function ServicesOffer() {
     return <div className=" w-full grid   lg:grid-cols-4  gap-x-10 lg:justify-items-center items-center lg:gap-y-0 gap-y-10 ">
-        <Fade fraction={0.2} cascade triggerOnce>
+        <Fade fraction={0.2} direction="up" cascade triggerOnce>
             <Promise
                 icon="shippingFast"
                 title="Free Delivery"

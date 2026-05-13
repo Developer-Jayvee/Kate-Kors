@@ -8,21 +8,21 @@ import Accessories from "/images/shop/accessories.jpg";
 export default function FeaturedCollections() {
   return (
     <div className="min-h-150 grid lg:grid-cols-3 grid-cols-1 gap-x-4 gap-y-8  p-4">
-      <Fade fraction={0.2} className="h-full lg:row-span-2  " triggerOnce>
+      <Fade fraction={0.2} direction="left" className="h-full lg:row-span-2" triggerOnce>
         <CollectionCard
           title="Carry confidence wherever you go"
           customClass="lg:row-span-2 h-full  flex flex-col text-right gap-2 "
           collectionImg={NewArrivalImg}
         />
       </Fade>
-      <Fade fraction={0.2} className="h-full  " triggerOnce>
+      <Fade fraction={0.2} direction="down" className="h-full  " triggerOnce>
         <CollectionCard
           title="Timeless style, every second."
           customClass="h-full lg:col-start-2 flex flex-col text-right items-start gap-2"
           collectionImg={WatchImg}
         />
       </Fade>
-      <Fade fraction={0.2} className="h-full " triggerOnce >
+      <Fade fraction={0.2} direction="down" className="h-full " triggerOnce >
         <CollectionCard
           title="Leave a scent they'll remember."
           customClass="h-full lg:col-start-3 text-right gap-2 "
@@ -30,6 +30,7 @@ export default function FeaturedCollections() {
         />
       </Fade>
       <Fade
+        direction="up"
         fraction={0.2}
         className="h-full  lg:col-start-2 lg:col-span-2"
        triggerOnce

@@ -17,8 +17,6 @@ export default function App() {
         <div className="my-15">
           <ServicesOffer/>
         </div>
-      </Section>
-      <Section sectionID="collections">
         <FeaturedCollections />
       </Section>
       <Section sectionID="collections">
